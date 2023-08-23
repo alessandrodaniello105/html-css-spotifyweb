@@ -110,6 +110,7 @@ img {
 
 .sidebar .menu {
   height: calc(100% - 90px);
+  padding: 20px 20px;
   overflow-y: auto;
 }
 
@@ -128,15 +129,13 @@ img {
   border: 1px solid black;
 }
 
-
+.playlist {
+  overflow-y: auto;
+}
 
 /*************
-    MENU
+    NAV
 *************/
-
-.menu {
-  padding: 20px 20px;
-}
 
 nav {
   color: #fff;
