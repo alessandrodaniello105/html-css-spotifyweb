@@ -124,8 +124,37 @@ img {
 .logo a {
   text-decoration: none;
   width: 150px;
+  height: 150px;
   border: 1px solid black;
 }
+
+
+
+/*************
+    MENU
+*************/
+
+.menu {
+  padding: 20px 20px;
+}
+
+nav {
+  color: #fff;
+}
+
+nav img {
+  width: 25px;
+}
+
+nav > .row.flex-column {
+  padding-top: 20px;
+}
+
+nav > .row > .col {
+  padding: 5px 0;
+}
+
+
 
 /*************
     APP CONTENT
@@ -160,26 +189,6 @@ img {
   /* max-width: 250px; */
   aspect-ratio: 1 / 1;
   background-color: black;
-}
-
-.menu {
-  padding: 20px 20px;
-}
-
-nav {
-  color: #fff;
-}
-
-nav img {
-  width: 25px;
-}
-
-nav > .row.flex-column {
-  padding-top: 20px;
-}
-
-nav > .row > .col {
-  padding: 5px 0;
 }
 
 /*************
@@ -254,9 +263,17 @@ nav > .row > .col {
 
 @media screen and (max-width: 480px) {
   
+  .desktop {
+    display: none;
+  }
+
   .sidebar {
     width: 45px;
     min-height: 100%;
+  }
+
+  .sidebar .logo {
+    width: 30px;
   }
     
   .sidebar .logo img:first-child {
@@ -267,10 +284,18 @@ nav > .row > .col {
     display: block;
   }
 
+  .sidebar .menu {
+    padding-top: 20px;
+  }
+
   .sidebar .menu .playlist {
     display: none;
   }
 
+  .menu {
+    align-items: center;
+
+  }
   .upgrade {
     width: calc(100% - 45px);
   }
