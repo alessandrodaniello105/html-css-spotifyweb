@@ -80,8 +80,8 @@
 
 .sidebar .menu {
   height: calc(100% - 90px);
+  overflow-y: auto;
 }
-
 
 
 /*************
@@ -99,5 +99,9 @@
     width: calc(100% - 45px);
     height: 100%;
     overflow-y: auto;
+  }
+
+  .sidebar .menu .playlist {
+    display: none;
   }
 }
