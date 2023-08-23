@@ -8,6 +8,12 @@ figure.img-box {
   border-radius: 50%;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /*************
     UTILITY
 *************/
@@ -39,6 +45,10 @@ figure.img-box {
 
 .j-around {
   justify-content: space-around;
+}
+
+.a-center {
+  align-items: center;
 }
 
 .wrap {
@@ -101,7 +111,20 @@ figure.img-box {
 .sidebar .menu {
   height: calc(100% - 90px);
   overflow-y: auto;
+}
 
+.sidebar .logo {
+  width: 70%;
+}
+
+.sidebar .logo img:last-child {
+  display: none;
+}
+
+.logo a {
+  text-decoration: none;
+  width: 150px;
+  border: 1px solid black;
 }
 
 /*************
@@ -139,6 +162,25 @@ figure.img-box {
   background-color: black;
 }
 
+.menu {
+  padding: 20px 20px;
+}
+
+nav {
+  color: #fff;
+}
+
+nav img {
+  width: 25px;
+}
+
+nav > .row.flex-column {
+  padding-top: 20px;
+}
+
+nav > .row > .col {
+  padding: 5px 0;
+}
 
 /*************
     CREATO PER TE/RELATED CONTENT
@@ -170,6 +212,11 @@ figure.img-box {
   min-width: 135px;
   width: 100%;
 }
+
+
+
+
+
 
 /*************
     RESPONSIVENESS
@@ -211,6 +258,18 @@ figure.img-box {
     width: 45px;
     min-height: 100%;
   }
+    
+  .sidebar .logo img:first-child {
+    display: none;
+  }
+
+  .sidebar .logo img:last-child {
+    display: block;
+  }
+
+  .sidebar .menu .playlist {
+    display: none;
+  }
 
   .upgrade {
     width: calc(100% - 45px);
@@ -218,11 +277,9 @@ figure.img-box {
 
   .app-content {
     width: calc(100% - 45px);
+    min-width: 200px;
     height: 100%;
     overflow-y: auto;
   }
 
-  .sidebar .menu .playlist {
-    display: none;
-  }
 }
