@@ -98,6 +98,7 @@
 .sidebar .menu {
   height: calc(100% - 90px);
   overflow-y: auto;
+
 }
 
 /*************
