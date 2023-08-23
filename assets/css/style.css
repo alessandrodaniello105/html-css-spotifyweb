@@ -39,7 +39,6 @@
 /*************
     MAIN
 *************/
-
 .player {
   height: 90px;
 }
@@ -49,12 +48,12 @@
 }
 
 
-
 /*************
     BROWSER
 *************/
 
-.row {
+.player > .row,
+.browser > .row {
   position: relative;
   height: 100%;
 }
@@ -76,6 +75,7 @@
   width: calc(100% - 250px);
   height: 100%;
   overflow-y: auto;
+  padding-top: 90px;
 }
 
 
