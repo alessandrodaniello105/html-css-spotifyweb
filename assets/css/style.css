@@ -24,6 +24,10 @@
   flex-direction: column;
 }
 
+.j-between {
+  justify-content: space-between;
+}
+
 
 
 /*************
