@@ -58,3 +58,27 @@
   height: 100%;
   overflow-y: auto;
 }
+
+
+
+
+
+
+
+/*************
+    RESPONSIVENESS
+*************/
+
+@media screen and (max-width: 480px) {
+  
+  .sidebar {
+    width: 45px;
+    min-height: 100%;
+  }
+
+  .app-content {
+    width: calc(100% - 45px);
+    height: 100%;
+    overflow-y: auto;
+  }
+}
