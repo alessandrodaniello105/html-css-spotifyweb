@@ -49,6 +49,15 @@ a > .col {
   cursor: pointer;
 }
 
+.btn.special a {
+  text-decoration: none;
+  color: #E7E7E8;
+  font-size: .9rem;
+  font-weight: 800;
+  padding: 10px 35px;
+  border: 1px solid #E7E7E8;
+  border-radius: 20px;
+}
 
 
 
@@ -87,6 +96,10 @@ a > .col {
 
 .j-center {
   justify-content: center;
+}
+
+.j-end {
+  justify-content: flex-end;
 }
 
 .a-center {
@@ -131,7 +144,8 @@ a > .col {
   padding-right: 20px;
   width: calc(100% - 225px);
   height: 90px;
-  text-align: right;
+  z-index: 999;
+  /* text-align: right; */
 }
 
 .app-content {
