@@ -152,10 +152,8 @@ ul > li > a {
 }
 
 .logo a {
-  text-decoration: none;
   width: 150px;
   height: 150px;
-  border: 1px solid black;
 }
 
 .playlist {
@@ -340,7 +338,7 @@ nav .col.desktop {
   }
 
   .sidebar .menu {
-    padding-top: 20px;
+    padding: 20px 0 0;
   }
 
   .sidebar .menu .playlist {
