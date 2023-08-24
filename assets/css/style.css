@@ -598,7 +598,7 @@ nav .col.desktop,
     width: 25%;
   }
   
-  .app-content > .row > .col:nth-child(2) > .row {
+  .app-content > .container > .row > .col:nth-child(2) > .row {
     justify-content: flex-start;
   }
 
