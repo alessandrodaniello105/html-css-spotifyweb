@@ -348,7 +348,7 @@ nav .col.desktop,
   /* max-width: 700px; */
 }
 
-.actions .row .col:nth-child(2) {
+.actions .row.time-cursor .col:nth-child(2) {
   flex-grow: 1;
 }
 
@@ -381,11 +381,41 @@ nav .col.desktop,
   font-size: .8rem;
   font-weight: 700;
   color: grey;
-  word-wrap: 0;
+}
+
+.player-controller .btn {
+  font-size: 1.2rem;
+  padding: 10px 10px;
 }
 
 
+.slidecontainer {
+  height: 5px;
+  background-color: #6F6F6F;
+  width: 100%;
+  border-radius: 15px;
 
+}
+
+.elapsed-time {
+  width: 25%;
+  height: 100%;
+  background-color: #C1C1C1;
+  border-radius: 15px;
+  position: relative;
+}
+
+.slidecursor {
+  background-color: rgba(255, 255, 255, 1);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  transform: translate(50%, -50%);
+  top: 2px;
+  display: none;
+}
 
 
 
