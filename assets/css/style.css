@@ -16,6 +16,7 @@ h2 {
 
 figure.img-box {
   border-radius: 50%;
+  overflow: hidden;
 }
 
 img {
@@ -346,17 +347,18 @@ nav .col.desktop,
   margin: 0 auto;
 }
 
-/* .app-content > .row {
-
-} */
-
-.app-content > .row > .col {
+.app-content > .container > .row > .col {
   width: 100%;
 }
-/* 
-.app-content .col {
-  text-align: center;
-} */
+
+.app-content .intro-text h2 {
+  padding-bottom: 0;
+}
+
+.app-content .intro-text > span {
+  display: inline-block;
+  margin: 10px 0;
+}
 
 .app-content .col.card {
   width: calc(100% / 6);
@@ -374,6 +376,9 @@ nav .col.desktop,
   aspect-ratio: 1 / 1;
   background-color: black;
 }
+
+
+
 
 /*************
     FILTERS
@@ -438,7 +443,7 @@ nav .col.desktop,
 }
 
 .card .text-box span,
-.related span {
+.intro-text span {
   font-weight: 800;
   font-size: .8rem;
   filter: brightness(.8);
@@ -457,10 +462,6 @@ nav .col.desktop,
     CREATO PER TE/RELATED CONTENT
 *************/
 
-/* .app-content .recent .col.card {
-
-} */
-
 .app-content .related .col.card {
   max-width: 230px;
 }
@@ -469,6 +470,13 @@ nav .col.desktop,
   max-width: 230px;
 }
 
+/*************
+    Artisti più popolari
+*************/
+
+.popular {
+  padding-bottom: 20px;
+}
 
 
 /*************
