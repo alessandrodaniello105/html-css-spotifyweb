@@ -362,17 +362,59 @@ nav .col.desktop,
   padding: 0 10px;
 }
 
-.fa-circle-play {
+.actions .fa-circle-play {
   font-size: 2rem;
 }
 
+/*************
+    RECENTLY PLAYED
+*************/
 
+.img-box {
+  position: relative;
+}
+
+.img-box > .album {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.img-box > .play-hover {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .2);
+  color: white;
+  font-size: 4rem;
+  display: none;
+}
+
+.play-hover .container {
+  width: 100%;
+  height: 100%;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card:hover .play-hover{
+  display: block;
+}
 
 
 
 /*************
     CREATO PER TE/RELATED CONTENT
 *************/
+
+/* .app-content .recent .col.card {
+
+} */
 
 .app-content .related .col.card {
   max-width: 230px;
@@ -381,6 +423,7 @@ nav .col.desktop,
 .app-content .popular .col.card {
   max-width: 230px;
 }
+
 
 
 /*************
