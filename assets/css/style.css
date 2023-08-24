@@ -9,6 +9,11 @@ body {
 
 }
 
+h2 {
+  color: white;
+  padding: 20px 0;
+}
+
 figure.img-box {
   border-radius: 50%;
 }
