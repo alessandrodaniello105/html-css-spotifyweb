@@ -78,6 +78,10 @@ a > .col {
   justify-content: space-around;
 }
 
+.j-center {
+  justify-content: center;
+}
+
 .a-center {
   align-items: center;
 }
@@ -366,6 +370,18 @@ nav .col.desktop,
 .col {
   height: 100%;
 } */
+
+.song-info .artist-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+}
+
+.song-info .song-name {
+  font-size: .8rem;
+  font-weight: 700;
+  color: grey;
+}
 
 /*************
     RESPONSIVENESS
