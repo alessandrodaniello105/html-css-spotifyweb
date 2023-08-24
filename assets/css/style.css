@@ -348,6 +348,29 @@ nav .col.desktop,
 }
 
 /*************
+    FILTERS
+*************/
+
+.filters {
+  text-align: center;
+  padding: 20px 0;
+  text-transform: uppercase;
+}
+
+.filters ul > li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.fa-circle-play {
+  font-size: 2rem;
+}
+
+
+
+
+
+/*************
     CREATO PER TE/RELATED CONTENT
 *************/
 
@@ -498,7 +521,7 @@ nav .col.desktop,
 
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   
   .desktop {
     display: none;
