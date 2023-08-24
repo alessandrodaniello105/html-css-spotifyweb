@@ -6,8 +6,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'PT Sans', sans-serif;
+
 }
 
 figure.img-box {
@@ -413,6 +412,22 @@ nav .col.desktop,
   height: 100%;
 }
 
+.card .text-box {
+  color: white;
+  
+}
+
+.card .text-box h4 {
+  /* font-size: 1rem; */
+  padding-top: 10px;
+  font-weight: 800;
+}
+
+.card .text-box span {
+  font-weight: 800;
+  font-size: .8rem;
+  filter: brightness(.8);
+}
 .card:hover {
   cursor: pointer;
 }
@@ -446,7 +461,7 @@ nav .col.desktop,
 *************/
 
 .song-section {
-  width: 20%;
+  flex-grow: 1;
   max-width: 225px;
   min-width: 170px;
 }
@@ -496,7 +511,7 @@ nav .col.desktop,
 }
 
 .song-info .artist-name {
-  font-size: 1rem;
+  font-size: .9rem;
   font-weight: 700;
   color: white;
 }
