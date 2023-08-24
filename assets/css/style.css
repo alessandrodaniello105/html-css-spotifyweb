@@ -341,6 +341,15 @@ nav .col.desktop,
   width: 100%;
 }
 
+.app-content > .container {
+  width: 98%;
+  margin: 0 auto;
+}
+
+/* .app-content > .row {
+
+} */
+
 .app-content > .row > .col {
   width: 100%;
 }
@@ -428,7 +437,8 @@ nav .col.desktop,
   font-weight: 800;
 }
 
-.card .text-box span {
+.card .text-box span,
+.related span {
   font-weight: 800;
   font-size: .8rem;
   filter: brightness(.8);
