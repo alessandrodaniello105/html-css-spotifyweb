@@ -445,6 +445,19 @@ nav .col.desktop,
     PLAYER
 *************/
 
+.song-section {
+  width: 20%;
+  max-width: 225px;
+  min-width: 170px;
+}
+
+.other-actions {
+  flex-grow: 1;
+  max-width: 225px;
+  min-width: 170px;
+}
+
+
 .actions {
   width: 60%;
   max-width: 530px;
@@ -528,12 +541,6 @@ nav .col.desktop,
   display: none;
 }
 
-
-.other-actions {
-  flex-grow: 1;
-  max-width: 250px;
-  min-width: 225px;
-}
 
 .player > .row > .col:last-child .col:last-child {
   width: 100%;
