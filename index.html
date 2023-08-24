@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous"/>
 
   <link rel="stylesheet" href="./assets/css/style.css">
 
@@ -48,6 +51,7 @@
             </div>
             <!-- /LOGO -->
             
+
             <!-- NAV -->
             <nav>
               <ul class=".row .flex-column">
@@ -110,36 +114,49 @@
             </nav>
             <!-- NAV -->
 
+
             <!-- PLAYLIST -->
             <div class="playlist">
-              <div class="row">
+              <ul class="row">
 
                 <!-- NEW LIST -->
-                <div class="col">
-                  <div class="row flex-row">
+                <li class="col flex-column">
 
-                    <div class="col new-pl debug">
-                      <span>+</span>
-                    </div>
+                  <span class="pl-section-title">PLAYLIST</span>
 
-                    <div class="col desktop flex-row a-center debug">
-                      <span>Home</span>
-                    </div>
+                  <ul class="row flex-row">
 
-                  </div>
-                </div>
+                    <li class="col new-pl debug">
+                      <a href="#"><span><i class="fa-solid fa-plus"></i></span></a>
+                    </li>
+
+                    <li class="col desktop flex-row a-center debug">
+                      <a href="#"><span>Crea Playlist</span></a>
+                    </li>
+
+                  </ul>
+
+                </li>
                 <!-- /NEW LIST -->
 
 
                 <!-- OTHER LISTS -->
-                <div class="col">
+                <li class="col pl-list">
                   <div class="container">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem illo saepe cupiditate iure harum, vel incidunt hic necessitatibus a totam perferendis quo eligendi officiis sapiente adipisci suscipit? Blanditiis quam eveniet dolorem distinctio tenetur libero vel vero! Nobis explicabo quasi tempore provident nulla iure, cumque laboriosam, soluta autem aspernatur ea facere!
+                    <ul>
+                      <li><a href="#">Nome Playlist</a></li>
+                      <li><a href="#">Nome Playlist</a></li>
+                      <li><a href="#">Nome Playlist</a></li>
+                      <li><a href="#">Nome Playlist</a></li>
+                      <li><a href="#">Nome Playlist</a></li>
+                      <li><a href="#">Nome Playlist</a></li>
+                      <li><a href="#">Nome Playlist</a></li>
+                    </ul>
                   </div>
-                </div>
+                </li>
                 <!-- /OTHER LISTS -->
 
-              </div>
+              </ul>
 
             </div>
             <!-- /PLAYLIST -->
