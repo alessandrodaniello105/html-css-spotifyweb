@@ -168,7 +168,7 @@ a > .col {
 .sidebar .menu {
   height: calc(100% - 90px);
   padding: 15px 15px 0;
-  overflow-y: auto;
+  /* overflow-y: auto; */
   min-height: 400px;
 }
 
@@ -188,6 +188,17 @@ a > .col {
 .playlist {
   overflow-y: auto;
 }
+/* 
+.playlist .col {
+  overflow-y: auto;
+} */
+
+/* .pl-list {
+  overflow-y: auto;
+}
+.pl-list .container {
+  height: 100%;
+} */
 
 /*************
     NAV
@@ -255,6 +266,10 @@ nav .col.desktop,
 .pl-list ul > li {
   padding: 5px 0;
   margin: 5px 0;
+}
+
+.pl-list {
+  height: 100%;
 }
 
 .user {
@@ -564,7 +579,7 @@ nav .col.desktop,
 
 
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 600px) {
   
   .desktop {
     display: none;
