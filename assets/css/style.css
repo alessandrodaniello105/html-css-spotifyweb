@@ -353,10 +353,19 @@ nav .col.desktop,
   width: 100%;
 }
 
+.player .img-box {
+  width: 40px;
+  height: 40px;
+}
 
+.player > .row .row {
+  height: 100%;
+}
 
-
-
+/* 
+.col {
+  height: 100%;
+} */
 
 /*************
     RESPONSIVENESS
