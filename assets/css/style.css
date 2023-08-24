@@ -344,8 +344,8 @@ nav .col.desktop,
 *************/
 
 .actions {
-  width: 100%;
-  max-width: 700px;
+  width: 60%;
+  /* max-width: 700px; */
 }
 
 .actions .row .col:nth-child(2) {
@@ -381,7 +381,15 @@ nav .col.desktop,
   font-size: .8rem;
   font-weight: 700;
   color: grey;
+  word-wrap: 0;
 }
+
+
+
+
+
+
+
 
 /*************
     RESPONSIVENESS
