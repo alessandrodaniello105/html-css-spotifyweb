@@ -44,6 +44,13 @@ a > .col {
   width: fit-content;
 }
 
+.btn {
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+
+
 
 /*************
     UTILITY
@@ -345,7 +352,7 @@ nav .col.desktop,
 
 .actions {
   width: 60%;
-  /* max-width: 700px; */
+  max-width: 530px;
 }
 
 .actions .row.time-cursor .col:nth-child(2) {
@@ -364,12 +371,21 @@ nav .col.desktop,
 
 .player > .row .row {
   height: 100%;
+  width: 100%;
 }
 
 /* 
 .col {
   height: 100%;
 } */
+
+.song-info {
+  padding: 0 10px;
+}
+
+.song-info .now-playing {
+  margin-left: 10px;
+}
 
 .song-info .artist-name {
   font-size: 1rem;
@@ -416,6 +432,19 @@ nav .col.desktop,
   top: 2px;
   display: none;
 }
+
+
+.other-actions {
+  flex-grow: 1;
+  max-width: 250px;
+  min-width: 225px;
+}
+
+.player > .row > .col:last-child .col:last-child {
+  width: 100%;
+  align-self: center;
+}
+
 
 
 
