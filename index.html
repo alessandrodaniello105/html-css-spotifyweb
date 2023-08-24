@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./assets/css/style.css">
 
@@ -44,14 +47,76 @@
             
             <!-- NAV -->
             <nav>
-              <div class="row flex-column">
+              <ul class=".row .flex-column">
 
                 <!-- HOME -->
+                <li class=".col">
+                  <a href="#">
+                    <div class="row flex-row">
+
+                      <div class="col icon debug">
+                        <img src="./assets/img/home.svg" alt="Home icon">
+                      </div>
+  
+                      <div class="col desktop flex-row a-center debug">
+                        <span>Home</span>
+                      </div>
+  
+                    </div>
+                  </a>
+                </li>
+                <!-- /HOME -->
+
+                <!-- CERCA -->
+                <li class=".col">
+                  <a href="#">
+                    <div class="row flex-row">
+
+                      <div class="col icon debug">
+                        <img src="./assets/img/search.svg" alt="Home icon">
+                      </div>
+  
+                      <div class="col desktop flex-row a-center debug">
+                        <span>Cerca</span>
+                      </div>
+  
+                    </div>
+                  </a>
+                </li>
+                <!-- /CERCA -->
+
+                <!-- LIBRERIA -->
+                <li class=".col">
+                  <a href="">
+                    <div class="row flex-row">
+
+                      <div class="col icon debug">
+                        <img src="./assets/img/libreria.svg" alt="Home icon">
+                      </div>
+  
+                      <div class="col desktop flex-row a-center debug">
+                        <span>La mia Libreria</span>
+                      </div>
+  
+                    </div>
+                  </a>
+                </li>
+                <!-- /LIBRERIA -->
+
+              </ul>
+            </nav>
+            <!-- NAV -->
+
+            <!-- PLAYLIST -->
+            <div class="playlist">
+              <div class="row">
+
+                <!-- NEW LIST -->
                 <div class="col">
                   <div class="row flex-row">
 
-                    <div class="col debug">
-                      <img src="./assets/img/home.svg" alt="Home icon">
+                    <div class="col new-pl debug">
+                      <span>+</span>
                     </div>
 
                     <div class="col desktop flex-row a-center debug">
@@ -60,49 +125,19 @@
 
                   </div>
                 </div>
-                <!-- /HOME -->
+                <!-- /NEW LIST -->
 
-                <!-- CERCA -->
+
+                <!-- OTHER LISTS -->
                 <div class="col">
-                  <div class="row flex-row">
-
-                    <div class="col debug">
-                      <img src="./assets/img/search.svg" alt="Home icon">
-                    </div>
-
-                    <div class="col desktop flex-row a-center debug">
-                      <span>Cerca</span>
-                    </div>
-
+                  <div class="container">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem illo saepe cupiditate iure harum, vel incidunt hic necessitatibus a totam perferendis quo eligendi officiis sapiente adipisci suscipit? Blanditiis quam eveniet dolorem distinctio tenetur libero vel vero! Nobis explicabo quasi tempore provident nulla iure, cumque laboriosam, soluta autem aspernatur ea facere!
                   </div>
                 </div>
-                <!-- /CERCA -->
-
-                <!-- LIBRERIA -->
-                <div class="col">
-                  <div class="row flex-row">
-
-                    <div class="col debug">
-                      <img src="./assets/img/libreria.svg" alt="Home icon">
-                    </div>
-
-                    <div class="col desktop flex-row a-center debug">
-                      <span>La mia Libreria</span>
-                    </div>
-
-                  </div>
-                </div>
-                <!-- /LIBRERIA -->
+                <!-- /OTHER LISTS -->
 
               </div>
-            </nav>
-            <!-- NAV -->
 
-            <!-- PLAYLIST -->
-            <div class="playlist">
-              <div class="container">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem illo saepe cupiditate iure harum, vel incidunt hic necessitatibus a totam perferendis quo eligendi officiis sapiente adipisci suscipit? Blanditiis quam eveniet dolorem distinctio tenetur libero vel vero! Nobis explicabo quasi tempore provident nulla iure, cumque laboriosam, soluta autem aspernatur ea facere!
-              </div>
             </div>
             <!-- /PLAYLIST -->
             
