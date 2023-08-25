@@ -4,9 +4,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bluegrey: #141922;
+  --grey: #282828;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
-
 }
 
 h2 {
@@ -34,15 +38,19 @@ li .row.flex-row {
 }
 
 ul > li img {
-  filter: brightness(0.8);
+  filter: brightness(0.9);
 }
 
 ul > li > a {
   color: white;
   text-decoration: none;
-  filter: brightness(0.8);
+  filter: brightness(0.4);
   font-size: 0.9rem;
   font-weight: 600;
+}
+
+ul > li > a:hover {
+  filter: brightness(1);
 }
 
 a > .col {
@@ -56,11 +64,11 @@ a > .col {
 
 .btn.special a {
   text-decoration: none;
-  color: #E7E7E8;
-  font-size: .9rem;
-  font-weight: 800;
-  padding: 10px 35px;
-  border: 1px solid #E7E7E8;
+  color: #fff;
+  font-size: .8rem;
+  font-weight: 700;
+  padding: 12px 30px;
+  border: 1px solid #fff;
   border-radius: 20px;
 }
 
@@ -120,6 +128,7 @@ a > .col {
 *************/
 .player {
   height: 90px;
+  background-color: var(--grey);
 }
 
 .browser {
@@ -141,6 +150,7 @@ a > .col {
 .sidebar {
   width: 225px;
   height: 100%;
+  background-color: #000;
 }
 
 .upgrade {
@@ -150,6 +160,7 @@ a > .col {
   width: calc(100% - 225px);
   height: 90px;
   z-index: 999;
+  background-color: rgba(0, 0, 0, .2);
   /* text-align: right; */
 }
 
@@ -158,6 +169,7 @@ a > .col {
   height: 100%;
   overflow-y: auto;
   padding-top: 90px;
+  background-color: var(--bluegrey);
 }
 
 
@@ -386,13 +398,12 @@ nav .col.desktop,
 
 .filters {
   text-align: center;
-  padding: 20px 0;
   text-transform: uppercase;
 }
 
 .filters ul > li {
   display: inline-block;
-  padding: 0 10px;
+  padding: 30px 10px;
 }
 
 .actions .fa-circle-play {
@@ -493,8 +504,13 @@ nav .col.desktop,
   flex-grow: 1;
   max-width: 225px;
   min-width: 200px;
+  color: white;
 }
 
+.song-actions {
+  color: white;
+  filter: brightness(.4);
+}
 
 .actions {
   width: 60%;
@@ -548,6 +564,7 @@ nav .col.desktop,
 .player-controller .btn {
   font-size: 1.2rem;
   padding: 10px 10px;
+  color: white;
 }
 
 
