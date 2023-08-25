@@ -7,6 +7,8 @@
 :root {
   --bluegrey: #141922;
   --grey: #282828;
+  --padding: 20px;
+  --green: #ADFF2F;
 }
 
 body {
@@ -45,7 +47,7 @@ ul > li > a {
   color: white;
   text-decoration: none;
   filter: brightness(0.4);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 600;
 }
 
@@ -184,13 +186,15 @@ a > .col {
 
 .sidebar .menu {
   height: calc(100% - 90px);
-  padding: 15px 15px 0;
+  /* padding: 15px 15px 0; */
   /* overflow-y: auto; */
   min-height: 400px;
 }
 
 .sidebar .logo {
   width: 70%;
+  padding-top: var(--padding);
+  padding-left: var(--padding);
 }
 
 .sidebar .logo img:last-child {
@@ -204,18 +208,10 @@ a > .col {
 
 .playlist {
   overflow-y: auto;
-}
-/* 
-.playlist .col {
-  overflow-y: auto;
-} */
+  padding-left: var(--padding);
 
-/* .pl-list {
-  overflow-y: auto;
 }
-.pl-list .container {
-  height: 100%;
-} */
+
 
 /*************
     NAV
@@ -231,6 +227,17 @@ nav > ul {
 
 nav > ul > li {
   padding: 3px 0;
+  padding-left: var(--padding);
+
+  border-left: 3px solid transparent;
+}
+
+nav > ul > li.active {
+  border-left: 3px solid var(--green);
+}
+
+nav > ul > li.active > a {
+  filter: brightness(1);
 }
 
 nav > .row > .col {
@@ -246,6 +253,13 @@ nav .col.desktop,
 .playlist .col.desktop {
   padding-left: 5px;
 }
+
+
+
+
+/*************
+    PLAYLIST
+*************/
 
 .playlist .new-pl {
   width: 40px;
@@ -332,6 +346,10 @@ nav .col.desktop,
   padding: 5px 0;
 }
 
+.user ul > li > a {
+  filter: brightness(1);
+}
+
 .user ul > li:first-child {
   border-bottom: 1px solid black;
 }
@@ -363,13 +381,18 @@ nav .col.desktop,
   width: 100%;
 }
 
+
+.app-content .intro-text {
+  margin-left: 8px;
+  padding-bottom: 20px;
+}
+
 .app-content .intro-text h2 {
   padding-bottom: 0;
 }
 
 .app-content .intro-text > span {
   display: inline-block;
-  margin: 10px 0;
 }
 
 .app-content .col.card {
@@ -449,16 +472,19 @@ nav .col.desktop,
 
 .card .text-box h4 {
   /* font-size: 1rem; */
-  padding-top: 10px;
+  padding: 20px 0 10px;
   font-weight: 800;
 }
 
 .card .text-box span,
 .intro-text span {
-  font-weight: 800;
+  color: white;
+  font-weight: 600;
   font-size: .8rem;
   filter: brightness(.8);
+  padding: 10px 0;
 }
+
 .card:hover {
   cursor: pointer;
 }
