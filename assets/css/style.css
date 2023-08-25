@@ -618,10 +618,6 @@ nav .icon {
   margin: 0 10px;
 }
 
-.slider {
-  min-width: 135px;
-  width: 100%;
-}
 
 .player .img-box {
   width: 40px;
@@ -685,9 +681,9 @@ nav .icon {
   color: white;
 }
 
-.actions .time-cursor .col:nth-child(2) {
+.actions .time-cursor .slider {
   flex-grow: 1;
-  margin: 0 10px;
+  margin: 0 25px;
 }
 
 .player > .row > .col:last-child .col:last-child {
@@ -743,7 +739,7 @@ nav .icon {
 
   .sidebar {
     width: 45px;
-    min-height: 100%;
+    /* min-height: 100%; */
   }
 
   .sidebar .logo {
