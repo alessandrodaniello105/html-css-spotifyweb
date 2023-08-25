@@ -7,6 +7,7 @@
 :root {
   --bluegrey: #141922;
   --grey: #282828;
+  --lightgrey: #6F6F6F;
   --padding: 20px;
   --green: #ADFF2F;
 }
@@ -44,15 +45,16 @@ ul > li img {
 }
 
 ul > li > a {
-  color: white;
+  /* color: white; */
   text-decoration: none;
-  filter: brightness(0.4);
+  /* filter: brightness(0.4); */
   font-size: 0.8rem;
   font-weight: 600;
+  color: var(--lightgrey);
 }
 
 ul > li > a:hover {
-  filter: brightness(1);
+  color: white;
 }
 
 a > .col {
@@ -206,7 +208,6 @@ a > .col {
   height: 90px;
   z-index: 999;
   background-color: rgba(0, 0, 0, .2);
-  /* text-align: right; */
 }
 
 .upgrade .btn:hover {
@@ -233,8 +234,6 @@ a > .col {
 
 .sidebar .menu {
   height: calc(100% - 90px);
-  /* padding: 15px 15px 0; */
-  /* overflow-y: auto; */
   min-height: 400px;
 }
 
@@ -278,12 +277,16 @@ nav > ul > li {
   border-left: 3px solid transparent;
 }
 
+nav > ul > li a {
+  color: var(--lightgrey);
+}
+
 nav > ul > li.active {
   border-left: 3px solid var(--green);
 }
 
 nav > ul > li.active > a {
-  filter: brightness(1);
+  color: white;
 }
 
 nav > .row > .col {
@@ -331,7 +334,6 @@ nav .icon {
   margin-right: 10px;
   vertical-align: middle;
   color: black;
-  
 }
 
 .playlist .col.desktop {
@@ -364,26 +366,29 @@ nav .icon {
 .user > .row {
   height: 100%;
   padding: 0 20px;
-  /* width: 100%; */
-
 }
 
 .user > .row > .col {
-  /* height: 50%; */
   width: 100%;
 }
 
+.user ul > li {
+  padding: 7px 0;
+}
+
+.user .cta {
+  border-bottom: 1px solid #6F6F6F;
+  /* margin-bottom: 10px; */
+  padding-bottom: 10px;
+  width: 100%;
+}
 
 .user .col.cta img {
   width: 15px;
   height: 15px;
   margin-right: 5px;
-  /* vertical-align: middle; */
 }
 
-.user .col.account {
-  padding: 10px 0;
-}
 
 .user .col.account .img-box {
   width: 25px;
@@ -400,24 +405,11 @@ nav .icon {
   filter: brightness(2);
 }
 
-.user ul > li {
-  padding: 5px 0;
-}
-
-.user ul > li > a {
-  filter: brightness(1);
-}
-
-.user ul > li:first-child {
-  border-bottom: 1px solid #6F6F6F;
-  /* margin-bottom: 10px; */
-  padding-bottom: 10px;
-}
-
-.col.account span {
-  font-size: 1rem;
-  font-weight: 800;
+.user .col.account span {
+  font-size: .9rem;
+  font-weight: 700;
   padding-left: 10px;
+  color: white;
 }
 
 
@@ -458,16 +450,12 @@ nav .icon {
 .app-content .col.card {
   width: calc(100% / 6);
   padding: 10px;
-  /* margin: 0 15px; */
-  /* min-width: 130px; */
-  /* flex-shrink: 1; */
   max-width: 210px;
   text-align: center;
 }
 
 .app-content .card .img-box {
   width: 100%;
-  /* max-width: 250px; */
   aspect-ratio: 1 / 1;
   background-color: black;
 }
@@ -539,24 +527,21 @@ nav .icon {
   height: 100%;
 }
 
-.card .text-box {
-  color: white;
-  
-}
 
 .card .text-box h4 {
-  /* font-size: 1rem; */
   padding: 20px 0 10px;
   font-weight: 800;
+  color: white;
+
 }
 
 .card .text-box span,
 .intro-text span {
-  color: white;
+  color: var(--lightgrey);
   font-weight: 600;
   font-size: .8rem;
-  filter: brightness(.8);
   padding: 10px 0;
+
 }
 
 .card:hover {
@@ -802,7 +787,7 @@ nav .icon {
     margin: 0 auto;
   }
 
-  .user ul > li:first-child {
+  .user .cta {
     border: none;
   } 
 
