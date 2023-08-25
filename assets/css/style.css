@@ -125,6 +125,49 @@ a > .col {
   flex-wrap: wrap;
 }
 
+
+/* SLIDER */
+.slidecontainer {
+  height: 5px;
+  width: 100%;
+  background-color: #6F6F6F;
+  border-radius: 15px;
+}
+
+.slidecontainer:hover {
+  cursor: pointer;
+}
+
+.slidecontainer .elapsed-time {
+  width: 25%;
+  height: 100%;
+  position: relative;
+  background-color: #C1C1C1;
+  border-radius: 15px;
+}
+
+.slidecontainer .elapsed-time .slidecursor {
+  display: none;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  top: 2px;
+  transform: translate(50%, -50%);
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 50%;
+}
+
+
+.slidecontainer:hover > .elapsed-time {
+  background-color: var(--green);
+}
+
+.slidecontainer:hover .elapsed-time .slidecursor {
+  display: inline-block;
+}
+
+
 /*************
     MAIN
 *************/
@@ -541,10 +584,7 @@ nav .col.desktop,
 .actions {
   width: 60%;
   max-width: 530px;
-}
-
-.actions .row.time-cursor .col:nth-child(2) {
-  flex-grow: 1;
+  padding: 5px 0 15px;
 }
 
 .slider {
@@ -561,11 +601,6 @@ nav .col.desktop,
   height: 100%;
   width: 100%;
 }
-
-/* 
-.col {
-  height: 100%;
-} */
 
 .song-info {
   padding-left: 10px;
@@ -587,40 +622,23 @@ nav .col.desktop,
   color: grey;
 }
 
-.player-controller .btn {
+.actions .player-controller .btn {
   font-size: 1.2rem;
   padding: 10px 10px;
   color: white;
 }
 
-
-.slidecontainer {
-  height: 5px;
-  background-color: #6F6F6F;
-  width: 100%;
-  border-radius: 15px;
-
+.actions .time-cursor .col:nth-child(odd) {
+  font-size: .6rem;
+  font-weight: 700;
+  color: white;
 }
 
-.elapsed-time {
-  width: 25%;
-  height: 100%;
-  background-color: #C1C1C1;
-  border-radius: 15px;
-  position: relative;
+.actions .time-cursor .col:nth-child(2) {
+  flex-grow: 1;
+  margin: 0 20px;
 }
 
-.slidecursor {
-  background-color: rgba(255, 255, 255, 1);
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  position: absolute;
-  right: 0;
-  transform: translate(50%, -50%);
-  top: 2px;
-  display: none;
-}
 
 
 .player > .row > .col:last-child .col:last-child {
