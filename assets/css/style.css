@@ -251,7 +251,7 @@ nav .col.desktop,
 }
 
 
-.playlist > .row > .col:first-child {
+.playlist > .row > .col:first-child a:hover {
   cursor: pointer;
 }
 
@@ -492,7 +492,7 @@ nav .col.desktop,
 .other-actions {
   flex-grow: 1;
   max-width: 225px;
-  min-width: 170px;
+  min-width: 200px;
 }
 
 
@@ -526,7 +526,7 @@ nav .col.desktop,
 } */
 
 .song-info {
-  padding: 0 10px;
+  padding-left: 10px;
 }
 
 .song-info .now-playing {
@@ -606,7 +606,7 @@ nav .col.desktop,
     width: 25%;
   }
   
-  .app-content > .container > .row > .col:nth-child(2) > .row {
+  .app-content > .container > .row > .col.recent > .row {
     justify-content: flex-start;
   }
 
