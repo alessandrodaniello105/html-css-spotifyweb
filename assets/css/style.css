@@ -123,10 +123,10 @@ a > .col {
 
 /* SLIDER */
 .slidecontainer {
-  height: 5px;
+  height: 4px;
   width: 100%;
   background-color: #6F6F6F;
-  border-radius: 15px;
+  border-radius: 50px;
 }
 
 .slidecontainer:hover {
@@ -138,13 +138,13 @@ a > .col {
   height: 100%;
   position: relative;
   background-color: #C1C1C1;
-  border-radius: 15px;
+  border-radius: 50px;
 }
 
 .slidecontainer .elapsed-time .slidecursor {
   display: none;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   position: absolute;
   right: 0;
   top: 2px;
