@@ -575,20 +575,24 @@ nav .icon {
   /* flex-grow: 1; */
   width: 100%;
   max-width: 225px;
-  min-width: 170px;
+  min-width: 140px;
 }
 
 .other-actions {
   width: 100%;
   /* flex-grow: 1; */
   max-width: 225px;
-  min-width: 200px;
+  min-width: 150px;
   color: white;
   padding-right: 10px;
 }
 
 .other-actions .btn {
-  font-size: .7rem;
+  font-size: .8rem;
+}
+
+.other-actions .slidecontainer {
+  margin-left: 5px;
 }
 
 .song-actions .btn {
@@ -605,6 +609,7 @@ nav .icon {
   width: 60%;
   max-width: 530px;
   padding: 5px 0 15px;
+  margin: 0 10px;
 }
 
 .slider {
