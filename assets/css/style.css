@@ -587,6 +587,10 @@ nav .icon {
   padding-right: 10px;
 }
 
+.other-actions .btn {
+  font-size: .7rem;
+}
+
 .song-actions .btn {
   color: white;
   filter: brightness(.4);
@@ -627,13 +631,13 @@ nav .icon {
 }
 
 .song-info .artist-name {
-  font-size: .9rem;
+  font-size: .8rem;
   font-weight: 700;
   color: white;
 }
 
 .song-info .song-name {
-  font-size: .8rem;
+  font-size: .7rem;
   font-weight: 700;
   color: grey;
 }
@@ -653,7 +657,11 @@ nav .icon {
 }
 
 .actions .player-controller .btn  i[class*="play"] {
-  padding: 0 20px;
+  padding: 0 10px;
+}
+
+.actions .time-cursor {
+  padding: 0 10px;
 }
 
 .actions .time-cursor .col:nth-child(odd) {
@@ -664,7 +672,7 @@ nav .icon {
 
 .actions .time-cursor .col:nth-child(2) {
   flex-grow: 1;
-  margin: 0 20px;
+  margin: 0 10px;
 }
 
 
