@@ -480,9 +480,26 @@ nav .icon {
 
 .filters ul > li {
   display: inline-block;
-  padding: 30px 10px;
+  margin: 30px 10px;
 }
 
+.filters > ul > li {
+  width: fit-content;
+  position: relative;
+}
+
+.filters .active::after {
+  content:"";
+  display: inline-block;
+  width: 35%;
+  height: 2px;
+  background-color: #ADFF2F;
+  position: absolute;
+  border: 2px solid black;
+  top: 100%;
+  right: 50%;
+  transform: translate(50%,0%);
+}
 
 /*************
     RECENTLY PLAYED
@@ -680,22 +697,14 @@ nav .icon {
   margin: 0 10px;
 }
 
-
-
 .player > .row > .col:last-child .col:last-child {
   width: 100%;
   align-self: center;
 }
 
 
-.filter .active::after {
-  content:'';
-  width: 30px;
-  height: 2px;
-  background-color: #ADFF2F;
-  position: absolute;
-  border: 2px solid black;
-}
+
+
 
 
 
