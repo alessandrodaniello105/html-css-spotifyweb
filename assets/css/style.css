@@ -712,11 +712,16 @@ nav .icon {
   .app-content .col.card {
     width: 25%;
   }
+
+  .app-content .col.card:nth-child(4) ~ .col.card {
+    visibility: collapse;
+  }
   
   .app-content > .container > .row > .col.recent > .row {
     justify-content: flex-start;
   }
 
+  
 }
 
 
@@ -725,6 +730,11 @@ nav .icon {
 @media screen and (max-width: 768px) {
   .app-content .col.card {
     width: 50%;
+  }
+
+  
+  .app-content .col.card:nth-child(2) ~ .col.card {
+    visibility: collapse;
   }
 }
 
