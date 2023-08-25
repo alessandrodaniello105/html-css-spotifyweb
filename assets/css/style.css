@@ -472,9 +472,6 @@ nav .col.desktop,
   padding: 30px 10px;
 }
 
-.actions .fa-circle-play {
-  font-size: 2rem;
-}
 
 /*************
     RECENTLY PLAYED
@@ -574,6 +571,7 @@ nav .col.desktop,
   max-width: 225px;
   min-width: 200px;
   color: white;
+  padding-right: 10px;
 }
 
 .song-actions {
@@ -622,10 +620,18 @@ nav .col.desktop,
   color: grey;
 }
 
+.actions .fa-circle-play {
+  font-size: 2rem;
+}
+
 .actions .player-controller .btn {
   font-size: 1.2rem;
   padding: 10px 10px;
   color: white;
+}
+
+.actions .player-controller .btn  i[class*="play"] {
+  padding: 0 20px;
 }
 
 .actions .time-cursor .col:nth-child(odd) {
