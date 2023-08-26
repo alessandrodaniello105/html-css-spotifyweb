@@ -179,9 +179,9 @@ a > .col {
 }
 
 
-/*************
-    BROWSER
-*************/
+/**************************
+          BROWSER
+**************************/
 
 .player > .row,
 .browser > .row {
@@ -228,10 +228,9 @@ a > .col {
 }
 
 
-
-/*************
-    SIDEBAR
-*************/
+/**************************
+          SIDEBAR
+**************************/
 
 .sidebar .user {
   height: 90px;
@@ -412,9 +411,9 @@ nav .icon {
 
 
 
-/*************
-    APP CONTENT
-*************/
+/**************************
+        APP CONTENT
+**************************/
 
 .app-content .row {
   overflow-x: hidden;
@@ -525,7 +524,6 @@ nav .icon {
   height: 100%;
 }
 
-
 .card .text-box h4 {
   padding: 20px 0 10px;
   font-weight: 800;
@@ -573,9 +571,23 @@ nav .icon {
 }
 
 
-/*************
-    PLAYER
-*************/
+/**************************
+           PLAYER
+**************************/
+
+.player .img-box {
+  width: 40px;
+  height: 40px;
+}
+
+.player .img-box:hover {
+  cursor: pointer;
+}
+
+.player > .row .row {
+  height: 100%;
+  width: 100%;
+}
 
 .song-section {
   /* flex-grow: 1; */
@@ -601,6 +613,40 @@ nav .icon {
   margin-left: 5px;
 }
 
+
+/*************
+    SONG-SECTION/NOW PLAYING
+*************/
+
+.song-info {
+  padding-left: 10px;
+}
+
+.song-info .now-playing {
+  margin-left: 10px;
+}
+
+.song-info .now-playing a {
+  text-decoration: none;
+}
+
+.song-info .now-playing .artist-name a {
+  font-size: .8rem;
+  font-weight: 700;
+  color: white;
+}
+
+.song-info .now-playing .song-name a {
+  font-size: .7rem;
+  font-weight: 700;
+  color: grey;
+}
+
+.song-info .now-playing .song-name a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
 .song-actions .btn {
   color: white;
   filter: brightness(.4);
@@ -611,46 +657,17 @@ nav .icon {
   filter: brightness(1);
 }
 
+
+
+/*************
+    ACTION PLAYER/CONTROLLER
+*************/
+
 .actions {
   width: 60%;
   max-width: 530px;
   padding: 5px 0 15px;
   margin: 0 10px;
-}
-
-
-.player .img-box {
-  width: 40px;
-  height: 40px;
-}
-
-.player .img-box:hover {
-  cursor: pointer;
-}
-
-.player > .row .row {
-  height: 100%;
-  width: 100%;
-}
-
-.song-info {
-  padding-left: 10px;
-}
-
-.song-info .now-playing {
-  margin-left: 10px;
-}
-
-.song-info .artist-name {
-  font-size: .8rem;
-  font-weight: 700;
-  color: white;
-}
-
-.song-info .song-name {
-  font-size: .7rem;
-  font-weight: 700;
-  color: grey;
 }
 
 .actions .fa-circle-play {
