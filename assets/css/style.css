@@ -41,7 +41,7 @@ li .row.flex-row {
 }
 
 ul > li img {
-  filter: brightness(0.9);
+  filter: brightness(0.7);
 }
 
 ul > li > a {
@@ -55,6 +55,10 @@ ul > li > a {
 
 ul > li > a:hover {
   color: white;
+}
+
+ul > li > a:hover img {
+  filter: brightness(1);
 }
 
 a > .col {
@@ -290,6 +294,10 @@ nav > ul > li.active {
 
 nav > ul > li.active > a {
   color: white;
+}
+
+nav > ul > li.active  img {
+  filter: brightness(1);
 }
 
 nav > .row > .col {
