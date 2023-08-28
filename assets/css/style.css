@@ -190,7 +190,6 @@ a > .col {
   font-size: 4rem;
   /* display: none; */
   opacity: 0;
-
 }
 
 .card > .img-box > .play-hover .container {
@@ -202,7 +201,6 @@ a > .col {
   margin: 20px 0 5px;
   font-weight: 800;
   color: white;
-
 }
 
 .card > .text-box span,
@@ -219,7 +217,7 @@ a > .col {
 .card:hover .play-hover{
   /* display: block; */
   opacity: 1;
-  transition: opacity 1s;
+  transition: opacity .5s;
 }
 
 
@@ -321,7 +319,7 @@ a > .col {
 }
 
 .sidebar .playlist {
-  overflow-y: auto;
+  /* overflow-y: auto; */
   padding-left: var(--padding);
 }
 
@@ -380,7 +378,7 @@ nav .icon {
     PLAYLIST
 *************/
 
-.pl-section-title {
+.playlist > .pl-section-title {
   display: inline-block;
   color: white;
   font-size: 0.9rem;
@@ -388,10 +386,12 @@ nav .icon {
   margin-bottom: 10px;
 }
 
-.playlist .new-pl a {
+.playlist .new-pl > a {
   margin-bottom: 10px;
   font-size: .9rem;
-  /* font-weight: 500; */
+  font-weight: 600;
+  color: var(--lightgrey);
+  text-decoration: none;
 }
 
 .playlist .new-pl span::before {
@@ -409,7 +409,7 @@ nav .icon {
 }
 
 
-.playlist .col.desktop {
+.playlist .new-pl.desktop {
   padding-left: 0;
 }
 
