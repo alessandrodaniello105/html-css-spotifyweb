@@ -682,7 +682,8 @@ text-decoration: underline;
 
 .player .actions {
   width: 40%;
-  /* max-width: 530px; */
+  max-width: 530px;
+  min-width: 235px;
   padding: 5px 0 15px;
   margin: 0 10px;
 }
@@ -705,10 +706,6 @@ text-decoration: underline;
   padding: 0 10px;
 }
 
-.player .actions .time-cursor {
-  padding: 0 10px;
-}
-
 .player .actions .time-cursor .col:nth-child(odd) {
   font-size: .6rem;
   font-weight: 700;
@@ -717,11 +714,13 @@ text-decoration: underline;
 
 .player .actions .time-cursor .slider {
   width: 80%;
+  margin: 0 15px;
 }
 
 .player .other-actions .slider {
-  width: 100%;
+  width: 60%;
   align-self: center;
+  margin: 0 auto;
 }
 
 
@@ -839,5 +838,9 @@ text-decoration: underline;
   .sidebar .user .cta {
     border: none;
   } 
+
+  .sidebar .user .col.cta img {
+    margin-right: 0;
+  }
 
 }
