@@ -237,7 +237,8 @@ a > .col {
 }
 
 .player > .row,
-.browser > .row {
+.browser > .row, 
+.playlist.row {
   position: relative;
   height: 100%;
 }
@@ -321,6 +322,7 @@ a > .col {
 .sidebar .playlist {
   /* overflow-y: auto; */
   padding-left: var(--padding);
+  height: calc(100% - 200px);
 }
 
 
@@ -377,6 +379,11 @@ nav .icon {
 /*************
     PLAYLIST
 *************/
+
+.sidebar .playlist .pl-list {
+  overflow-y: auto;
+  height: calc(100% - 70px);
+}
 
 .playlist > .pl-section-title {
   display: inline-block;
