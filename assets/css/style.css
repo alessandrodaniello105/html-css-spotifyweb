@@ -330,7 +330,8 @@ nav .icon {
 
 .playlist .new-pl a {
   margin-bottom: 10px;
-  /* filter: brightness(1); */
+  font-size: .9rem;
+  font-weight: 500;
 }
 
 .playlist .new-pl span::before {
@@ -347,23 +348,31 @@ nav .icon {
   color: black;
 }
 
-.playlist .new-pl a {
-  font-size: .9rem;
-  font-weight: 500;
-}
 
 .playlist .col.desktop {
   padding-left: 0;
 }
-
+/* 
 .pl-list {
+  height: 250px;
+} */
+
+/* .col.pl-list {
   height: 100%;
-}
+  max-height: 200px;
+  overflow: auto;
+} */
 
 .pl-list ul > li {
   padding: 5px 0;
   margin: 5px 0;
 }
+
+
+
+/*************
+    USER BAR
+*************/
 
 .user {
   padding-top: 10px;
@@ -455,7 +464,7 @@ nav .icon {
 .app-content .col.card {
   width: calc(100% / 6);
   padding: 10px;
-  max-width: 210px;
+  /* max-width: 210px; */
   text-align: center;
 }
 
@@ -561,14 +570,14 @@ nav .icon {
 /*************
     CREATO PER TE/RELATED CONTENT
 *************/
-
+/* 
 .app-content .related .col.card {
   max-width: 230px;
 }
 
 .app-content .popular .col.card {
   max-width: 230px;
-}
+} */
 
 /*************
     Artisti più popolari
@@ -625,10 +634,10 @@ nav .icon {
 /*************
     SONG-SECTION/NOW PLAYING
 *************/
-
+/* 
 .song-info {
   padding-left: 10px;
-}
+} */
 
 .song-info .now-playing {
   margin-left: 10px;
@@ -672,8 +681,8 @@ nav .icon {
 *************/
 
 .actions {
-  width: 60%;
-  max-width: 530px;
+  width: 40%;
+  /* max-width: 530px; */
   padding: 5px 0 15px;
   margin: 0 10px;
 }
