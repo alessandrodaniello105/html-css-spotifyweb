@@ -66,7 +66,7 @@ a > .col {
 }
 
 .btn {
-  padding: 0 5px;
+  margin: 0 5px;
   cursor: pointer;
 }
 
@@ -641,6 +641,7 @@ nav .icon {
 
 .song-info .now-playing {
   margin-left: 10px;
+  line-height: 12px;
 }
 
 .song-info .now-playing a {
@@ -649,18 +650,21 @@ nav .icon {
 
 .song-info .now-playing .artist-name a {
   font-size: .8rem;
-  font-weight: 700;
+  font-weight: 800;
   color: white;
 }
 
 .song-info .now-playing .song-name a {
   font-size: .7rem;
-  font-weight: 700;
+  font-weight: 500;
   color: grey;
 }
 
+.song-info .now-playing a:hover {
+text-decoration: underline;
+}
+
 .song-info .now-playing .song-name a:hover {
-  text-decoration: underline;
   color: white;
 }
 
