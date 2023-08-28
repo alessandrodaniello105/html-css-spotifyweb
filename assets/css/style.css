@@ -716,8 +716,7 @@ nav .icon {
 }
 
 .actions .time-cursor .slider {
-  flex-grow: 1;
-  margin: 0 25px;
+  width: 80%;
 }
 
 .player > .row > .col:last-child .col:last-child {
