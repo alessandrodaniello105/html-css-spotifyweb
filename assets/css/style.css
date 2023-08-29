@@ -253,7 +253,7 @@ a > .col {
   width: calc(100% - 231px);
   height: 90px;
   background-color: rgba(0, 0, 0, .4);
-  padding-right: 20px;
+  padding-right: 10px;
 }
 
 .sidebar {
@@ -569,18 +569,10 @@ a > .col {
     CREATO PER TE/RELATED CONTENT
 *************/
 
-/* 
-.app-content .related .col.card {
-  max-width: 230px;
-}
-
-.app-content .popular .col.card {
-  max-width: 230px;
-} */
 
 
 /*************
-    Artisti più popolari
+    ARTISTI PIU POPOLARI
 *************/
 
 .app-content .popular {
@@ -606,34 +598,25 @@ a > .col {
   width: 100%;
 }
 
-.player .song-section {
+.player .song-section,
+.player .other-actions {
   /* flex-grow: 1; */
   width: 100%;
-  max-width: 225px;
-  min-width: 140px;
+  max-width: 220px;
+  min-width: 145px;
 }
 
 .player .other-actions {
-  width: 100%;
-  /* flex-grow: 1; */
-  max-width: 225px;
-  min-width: 150px;
   color: white;
-  padding-right: 10px;
 }
-
-.player .other-actions .btn {
-  font-size: .8rem;
-}
-
-.player .other-actions .slidecontainer {
-  margin-left: 5px;
-}
-
 
 /*************
     SONG-SECTION/NOW PLAYING
 *************/
+
+.player .song-section .song-info {
+  margin-left: 10px;
+}
 
 .player .song-section .song-info .now-playing {
   margin-left: 10px;
@@ -683,13 +666,13 @@ text-decoration: underline;
 .player .actions {
   width: 40%;
   max-width: 530px;
-  min-width: 235px;
+  min-width: 193px;
   padding: 5px 0 15px;
   margin: 0 10px;
 }
 
 .player .actions .fa-circle-play {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .player .actions .fa-circle-play:hover {
@@ -697,8 +680,8 @@ text-decoration: underline;
 }
 
 .player .actions .player-controller .btn {
-  font-size: 1.2rem;
-  padding: 10px 10px;
+  font-size: 17px;
+  padding: 10px 5px;
   color: white;
 }
 
@@ -717,13 +700,29 @@ text-decoration: underline;
   margin: 0 15px;
 }
 
-.player .other-actions .slider {
-  width: 60%;
-  align-self: center;
-  margin: 0 auto;
+/*************
+    OTHER ACTIONS
+*************/
+
+
+
+.player .other-actions > .row > .col:first-child {
+  width: 45%;
+  /* margin-right: 10px; */
 }
 
+.player .other-actions .btn {
+  font-size: .8rem;
+}
 
+.player .other-actions .slider {
+  width: 55%;
+  align-self: center;
+}
+
+.player .other-actions .slidecontainer {
+  width: 100%;
+}
 
 
 
